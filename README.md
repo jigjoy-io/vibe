@@ -17,13 +17,15 @@ Follow the prompts to:
 
 - **Website (Next.js)** - Static websites, marketing pages, blogs, and portfolios with React Server Components and optimal SEO.
 - **Web App (SPA + Database)** - Interactive apps like dashboards, SaaS tools, or social platforms with Supabase auth, real-time data, and serverless backend.
-- **Mobile App** _(coming soon)_ - Cross-platform mobile apps with Expo React Native and EAS deployment.
+- **Mobile App (Expo + React Native)** - Cross-platform mobile apps for iOS and Android with Expo Router, EAS builds, and app store deployment.
 
 ## After Creation
 
 ```bash
 cd your-project
-pnpm dev
+pnpm dev          # For Next.js and SPA templates
+# OR
+pnpm start        # For Mobile App template
 ```
 
 ## How Templates Work with Claude Code
