@@ -11,10 +11,17 @@ const TEMPLATES = {
   next: {
     title: "Website (Next.js)",
     repo: "Lotus015/vibecode-next-template",
+    devCommand: "pnpm dev",
   },
   spa: {
     title: "Web App (SPA + Database)",
     repo: "Lotus015/vibecode-spa-template",
+    devCommand: "pnpm dev",
+  },
+  mobile: {
+    title: "Mobile App (Expo + React Native)",
+    repo: "Lotus015/vibecode-mobile-app-template",
+    devCommand: "pnpm start",
   },
 }
 
@@ -88,7 +95,7 @@ async function main() {
   console.log(kleur.green("\n✅ Done!\n"))
   console.log("Next steps:")
   console.log(kleur.cyan(`  cd ${projectName}`))
-  console.log(kleur.cyan("  pnpm dev\n"))
+  console.log(kleur.cyan(`  ${TEMPLATES[template].devCommand}\n`))
   console.log("IMPORTANT:")
   console.log("  Read CLAUDE.md before using any AI coding tool.\n")
 
